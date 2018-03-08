@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.o2o.dao.AreaDao">
+<!--查找：按照权重降序排列 -->
+	<select id="queryArea" resultType="com.o2o.entity.Area">
+		select * from tb_area order by priority DESC
+	</select>
+</mapper>
